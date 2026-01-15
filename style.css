@@ -110,15 +110,50 @@ nav a:hover {
 .card {
   padding: 40px;
   border: 1px solid #eee;
+  background: #fff;
+  transition: 
+    background 0.5s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+  cursor: pointer;
+}
+.card:hover {
+  background: linear-gradient(
+    135deg,
+    #cc49d7 0%,
+    #b43fc2 45%,
+    #e6a6ee 100%
+  );
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(204, 73, 215, 0.35);
+  color: #fff;
+}
+.card:hover h3,
+.card:hover p {
+  color: #fff;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-.card h3 {
-  margin-bottom: 10px;
+.card:hover::after {
+  opacity: 1;
+}
+.card {
+  position: relative;
+  overflow: hidden;
 }
 
-.card p {
-  color: #666;
-}
 
 /* ABOUT */
 .about-text {
