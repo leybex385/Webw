@@ -1,100 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Your Name</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Custom typography tuning -->
   <style>
     body {
-      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* Navigation */
+    nav {
+      margin-bottom: 40px;
+      font-size: 15px;
+    }
+
+    nav a {
+      margin-right: 18px;
+      text-decoration: none;
+      color: #111;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Headings */
+    h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0 0 14px 0;
+    }
+
+    ul {
+      margin: 0 0 14px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #444;
     }
   </style>
 </head>
 
-<body class="text-gray-900 bg-white">
+<body>
 
-  <!-- Navigation -->
-  <header class="border-b">
-    <nav class="max-w-4xl mx-auto px-6 py-4 flex justify-between text-sm">
-      <span class="font-semibold">Your Name</span>
-      <div class="space-x-4">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#research" class="hover:underline">Research</a>
-        <a href="#projects" class="hover:underline">Projects</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </div>
+  <div class="container">
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </header>
 
-  <!-- Main Content -->
-  <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
-
-    <!-- Intro -->
-    <section>
-      <h1 class="text-3xl font-bold mb-2">Your Name</h1>
-      <p class="text-gray-700">
-        Your title / affiliation goes here. Short academic or professional
-        description in 1–2 lines.
+    <!-- Header -->
+    <header>
+      <h1>Your Name</h1>
+      <p>
+        Your title / affiliation here. One short sentence.
       </p>
-    </section>
+    </header>
 
     <!-- About -->
     <section id="about">
-      <h2 class="text-xl font-semibold mb-3">About</h2>
-      <p class="leading-relaxed">
-        Write a concise paragraph about your background, interests,
-        and current work. Keep it factual and professional.
+      <h2>About</h2>
+      <p>
+        This is where you write a concise academic-style biography.
+        No marketing language. No buzzwords. Just facts.
       </p>
     </section>
 
-    <!-- Research / Experience -->
+    <!-- Research -->
     <section id="research">
-      <h2 class="text-xl font-semibold mb-3">Research Interests</h2>
-      <ul class="list-disc list-inside space-y-1">
+      <h2>Research Interests</h2>
+      <ul>
         <li>Research area one</li>
         <li>Research area two</li>
         <li>Research area three</li>
       </ul>
     </section>
 
-    <!-- Projects / Publications -->
-    <section id="projects">
-      <h2 class="text-xl font-semibold mb-3">Selected Work</h2>
-      <ul class="space-y-2">
-        <li>
-          <strong>Project / Paper Title</strong><br />
-          <span class="text-sm text-gray-700">
-            Short description or publication info.
-          </span>
-        </li>
-        <li>
-          <strong>Another Project</strong><br />
-          <span class="text-sm text-gray-700">
-            Conference, journal, or outcome.
-          </span>
-        </li>
-      </ul>
+    <!-- Publications -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <p>
+        Author, A. (2025). <em>Title of paper</em>. Journal Name.
+      </p>
+      <p>
+        Author, A. (2024). <em>Another paper title</em>. Conference Name.
+      </p>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-      <h2 class="text-xl font-semibold mb-3">Contact</h2>
+      <h2>Contact</h2>
       <p>Email: yourname@example.com</p>
-      <p>GitHub / Google Scholar / LinkedIn</p>
     </section>
 
-  </main>
-
-  <!-- Footer -->
-  <footer class="border-t mt-12">
-    <div class="max-w-4xl mx-auto px-6 py-4 text-sm text-gray-600">
+    <footer>
       © 2026 Your Name
-    </div>
-  </footer>
+    </footer>
+
+  </div>
 
 </body>
 </html>
