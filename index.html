@@ -1,44 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Your Name</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom typography tuning -->
+  <style>
+    body {
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    }
+  </style>
 </head>
-<body class="font-sans text-gray-800">
+
+<body class="text-gray-900 bg-white">
 
   <!-- Navigation -->
-  <nav class="fixed top-0 w-full bg-white shadow">
-    <ul class="flex justify-center space-x-6 py-4">
-      <li><a href="#about" class="hover:text-blue-600">About</a></li>
-      <li><a href="#work" class="hover:text-blue-600">Work</a></li>
-      <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
-      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-    </ul>
-  </nav>
+  <header class="border-b">
+    <nav class="max-w-4xl mx-auto px-6 py-4 flex justify-between text-sm">
+      <span class="font-semibold">Your Name</span>
+      <div class="space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#research" class="hover:underline">Research</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <!-- Hero -->
-  <section class="h-screen flex flex-col justify-center items-center">
-    <h1 class="text-5xl font-bold">Your Name</h1>
-    <p class="text-xl mt-2">Your Professional Title</p>
-  </section>
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-6 py-10 space-y-12">
 
-  <!-- About -->
-  <section id="about" class="px-8 py-16 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold">About</h2>
-    <p>Your story & background here…</p>
-  </section>
+    <!-- Intro -->
+    <section>
+      <h1 class="text-3xl font-bold mb-2">Your Name</h1>
+      <p class="text-gray-700">
+        Your title / affiliation goes here. Short academic or professional
+        description in 1–2 lines.
+      </p>
+    </section>
 
-  <!-- Work/Projects -->
-  <section id="projects" class="px-8 py-16 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold">Selected Projects</h2>
-    <!-- Repeat project cards -->
-  </section>
+    <!-- About -->
+    <section id="about">
+      <h2 class="text-xl font-semibold mb-3">About</h2>
+      <p class="leading-relaxed">
+        Write a concise paragraph about your background, interests,
+        and current work. Keep it factual and professional.
+      </p>
+    </section>
 
-  <!-- Contact -->
-  <footer id="contact" class="px-8 py-16 text-center">
-    <h2 class="text-2xl font-semibold">Get in touch</h2>
-    <p>Email: yourname@example.com</p>
+    <!-- Research / Experience -->
+    <section id="research">
+      <h2 class="text-xl font-semibold mb-3">Research Interests</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Research area one</li>
+        <li>Research area two</li>
+        <li>Research area three</li>
+      </ul>
+    </section>
+
+    <!-- Projects / Publications -->
+    <section id="projects">
+      <h2 class="text-xl font-semibold mb-3">Selected Work</h2>
+      <ul class="space-y-2">
+        <li>
+          <strong>Project / Paper Title</strong><br />
+          <span class="text-sm text-gray-700">
+            Short description or publication info.
+          </span>
+        </li>
+        <li>
+          <strong>Another Project</strong><br />
+          <span class="text-sm text-gray-700">
+            Conference, journal, or outcome.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="text-xl font-semibold mb-3">Contact</h2>
+      <p>Email: yourname@example.com</p>
+      <p>GitHub / Google Scholar / LinkedIn</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t mt-12">
+    <div class="max-w-4xl mx-auto px-6 py-4 text-sm text-gray-600">
+      © 2026 Your Name
+    </div>
   </footer>
 
 </body>
